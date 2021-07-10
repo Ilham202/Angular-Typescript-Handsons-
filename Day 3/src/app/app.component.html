@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="">
+    <style>
+        body { font-family: Segoe UI, Arial
+
+        } 
+        a:visited { 
+            color: blue 
+        } 
+        a { 
+            text-decoration: none
+             } 
+        .active-link {
+             border-bottom: Solid 1px blue 
+             }
+        ul{
+            list-style-type:none;
+        }
+        li{
+            margin-right: 10px;
+            display:block;
+            float: left;
+
+        }
+        </style>
+  </head>
+  <body>
+    <script src="" async defer></script>
+    <ul>
+        <li>Angular Learning</li>
+        <li><a routerLink="/view-emp" routerLinkActive='active'>View Employee</a></li>
+        <li><a routerLink="/edit-emp" routerLinkActive='active'>Edit Employee</a></li>
+        <li><a routerLink="/edit-emp-template-driven" routerLinkActive='active'>Edit Employee(Template Driven)</a></li>
+    </ul><br>
+    <div>
+    <router-outlet></router-outlet>
+    </div>
+  </body>
+</html>
