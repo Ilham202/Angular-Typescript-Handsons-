@@ -7,6 +7,7 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'AngularLearning';
+  favourite = "Lord of the Rings";
   flag:boolean = true;
   Salary=10000;
   permanent="yes";
