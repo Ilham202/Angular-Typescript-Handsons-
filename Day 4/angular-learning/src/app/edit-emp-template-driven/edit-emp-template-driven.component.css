@@ -1,0 +1,26 @@
+.block {
+
+    float:left;
+    
+    width:33%
+    
+    }
+
+input
+{
+    padding: 5px;
+    border-radius: 5px;
+}
+
+input.ng-invalid
+{
+    border: 1px solid red;
+}
+input.ng-valid
+{
+    border: 1px solid green;
+ }
+ .error
+ {
+   color: red;
+ }

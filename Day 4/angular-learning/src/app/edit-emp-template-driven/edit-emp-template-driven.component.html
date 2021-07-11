@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+     <form (ngSubmit)="onSubmit(userForm.value)" #userForm="ngForm">
+    <label style="font-weight: bold;">Name </label><br>
+    <input type="text"  #name="ngModel"  ngModel name="username" required> 
+    <br>
+    <span *ngIf="name.invalid || name.value.length<2" class="error">Name must be atleast 2 characters long.</span>
+    <!--<input type="text" name="name" [(ngModel)]="name" minlength="2" maxlength="10" required>
+    <p>{{name}} </p>-->
+    
+    <div>name.invalid - {{name.invalid}}</div>
+    <div>name.touched - {{name.touched}}</div>
+    <div>name.dirty - {{name.dirty}}</div>
+    <div>name.errors.required - {{name.errors?.required}}</div>
+    <div>name.errors.minlength - {{name.errors?.minlength | json}}</div><br>
+    <button type="submit" style="padding: 5px 10px; background-color: steelblue; color: white; border-radius: 4px;" >Save</button>
+    </form>
+
+</body>
+</html>
+
